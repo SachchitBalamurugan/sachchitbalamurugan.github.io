@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Speak Sprouts</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+.additional-cards-section {
+    background-color: #0f6842ff;
+    padding: 100px 0;
+}
+
+.small-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.small-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 30%;
+    max-width: 150px;
+    text-align: center;
+}
+
+.small-card:hover {
+    transform: scale(1.05);
+}
+
+.small-card img {
+    width: 100%;
+    height: auto;
+}
+
+.small-card-content {
+    padding: 10px;
+}
+
+.small-card-title {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.small-card-text {
+    font-size: 0.875em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .small-card {
+        width: 45%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .small-card {
+        width: 45%;
+        max-width: none;
+    }
+}
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 30%;
+            
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        .card img {
+            width: 100%;
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .card-title2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card-text {
+    color: #333;
+    font-size: 1em;
+}
+
+.card-text2 {
+    color: white;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.new-section .card-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.new-section .card2 {
+    position: relative;
+    width: 250px; /* Adjusted width */
+    height: 250px; /* Adjusted height */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.new-section .card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.new-section .card-content2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+    padding: 20px;
+}
+
+.new-section .card2:hover {
+    transform: scale(1.05);
+}
+
+.new-section .card2:hover .card-content2 {
+    opacity: 1;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="img/core-img/sun.png" alt="">
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- ***** Top Header Area ***** -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <!-- Top Header Content -->
+                             
+
+                            <!-- Top Header Content -->
+                            <div class="top-header-meta d-flex">
+                                <!-- Language Dropdown -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Navbar Area ***** -->
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- Nav Brand -->
+                        <a href="/Project-SuryaTEST" class="nav-brand"><img style="width: 90px; height: 90px;" src="img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Navbar Start -->
+                            <div class="classynav">
+                                <ul>
+                                     <li><a href="/Project-SuryaTEST">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="Impact.html">Impact</a>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="donate.html">Donate</a>
+                                    <li><a href="contact.html">Contact</a></li>       
+                                    <li><a href="Awards.html">Recognition and Media</a>
+                                                                            <li><a href="volunteers.html">Volunteers</a>
+
+                                </ul>
+
+                              
+                            </div>
+                            <!-- Navbar End -->
+                        </div>
+                    </nav>
+
+                    <!-- Search Form -->
+                    <div class="search-form">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
+                            <button type="submit" class="d-none"></button>
+                        </form>
+                        <!-- Close Icon -->
+                        <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-post-slides owl-carousel">
+
+            <!-- Single Hero Post -->
+            <div class="single-hero-post bg-overlay">
+                <!-- Post Image -->
+                <div class="slide-img bg-img" style="background-image: url('img/d1.jpeg');"></div>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Post Content -->
+                            <div class="hero-slides-content text-center">
+                                <h2>Donate</h2>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+    </section>
+    <!-- ##### Hero Area End ##### -->
+    <section style="background-color: #0f6842ff;" class="our-services-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-lg-5">
+                            <div class="alazea-service-area mb-100">
+                                <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="500ms">
+                                    <!-- Content -->
+                                    <div class="service-content">
+                                        <h1 style="font-size: 60px; color: white;">Donate</h1>
+                                    </div>
+                                </div>
+    
+                                <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="100ms" style="margin-bottom: 10px;">
+                                    
+                                    <div class="service-content">
+                                       
+                                        <p style="color: white; margin-bottom: 5px; margin-bottom: 20px;">A mere contribution of at least Rs. 1000 (INR) will help a type-one diabetic child afford and access life-giving insulin for an entire month.Every donation makes a tremendous difference!Type-one diabetic children in India do not have the access to quality healthcare and sufficient resources like glucose monitors, insulin cartridges, insulin pens and CGMs.An average type-one diabetic spends over 20,000 Indian National Rupees on their diabetes every single year.From purchasing insulin, syringes, lancets to diagnostic tests and transport; 20,000 rupees is an inconceivable amount to spend for presumably a daily income worker. Let alone affordability of the essential resources, their mental health is ever deteriorating.From not being able to afford a refrigerator to store life-giving insulin, to missing school due to lack of awareness; the underprivileged t-1 diabetics are facing various problems. Your donation will go a long way in supporting these children! 
+                                            Donate here
+                                        </p>
+                                        <p style="color: white; font-weight: bold; font-size: 20px;">All donations go to sponsoring life saving insulin</p>
+                                </div>
+                            </div>
+                           
+                            <a class="btn alazea-btn2 mt-15" href="https://milaap.org/fundraisers/support-less-privileged-type-1-diabetic-adolescents">Donate</a>
+
+                        </div>
+                        <!-- Image -->
+                       
+                        <!-- End of Image -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="additional-cards-section section-padding-100-0"></section>
+        <div  style="background-color: #0f6842ff; margin-top: -250px;">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center" style="color: white; margin-top: 50px;">Incubated by</h3>
+                    <div class="small-card-container">
+                        <div class="small-card">
+                            <img src=https://clg-storage.s3.amazonaws.com/blog/qFHIs1590220686062 alt="Card Image 1">
+                            <div class="small-card-content">
+                                <h3 class="small-card-title">1M1B </h3>
+                               
+                            </div>
+                        </div>
+                        <div class="small-card">
+                            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ItERhxccFFwTJt-i0KDIzBKvd1LsdGk0Ug&s alt="Card Image 2">
+                            <div class="small-card-content">
+                                <h3 class="small-card-title">International Weserve Foundation</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="small-card">
+                            <img src=https://cdn.freebiesupply.com/logos/large/2x/rotary-international-6-logo-png-transparent.png alt="Card Image 3">
+                            <div class="small-card-content">
+                                <h3 class="small-card-title">Rotary International 
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="small-card">
+                            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyKcQfe7pVJ2AC5qxo4KE45sUtOeregt0_xw&s alt="Card Image 4">
+                            <div class="small-card-content">
+                                <h3 class="small-card-title">Innerwheel International 
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="small-card">
+                            <img src=https://media.licdn.com/dms/image/C4D0BAQFQApQTe8Dicg/company-logo_200_200/0/1632245901852/bristlecone_logo?e=2147483647&v=beta&t=Q3HF2adjIqUUjL-0ZQrewHCq2QHL2i6fNJJWhPbadkE alt="Card Image 5">
+                            <div class="small-card-content">
+                                <h3 class="small-card-title">Bristlecone 
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="small-card">
+                            <img src="img/img9.jpeg" alt="Card Image 6">
+                            <div class="small-card-content">
+                                <h3 class="small-card-title">Sudaiva Foundation</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <footer class="footer-area" style="background-image: linear-gradient(135deg, #dead84, #50974f, #317123, #122f13, #2f4331);">        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-6">
+                        <div class="single-footer-widget">
+                            <div class="footer-logo mb-30">
+                                <a href="#"><img style="height: 100px; width: 100px;" src="img/logo.png" alt=""></a>
+                            </div>
+                            <p>Like our work? 
+                                Spread the word. 
+                                </p>
+                            <div class="social-info">
+                                
+                                <a href="https://x.com/project_surya_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                               
+                                <a href="https://www.instagram.com/project_surya_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/company/projectsurya/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-6">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5>CONTACT</h5>
+                            </div>
+    
+                            <div class="contact-information">
+                                
+                                
+                                <p><span>Email:</span> project.surya.info@gmail.com</p>
+                                <hr style="border: 1px solid white; margin: 10px 0;">
+                                <p>Website created by YOTI: Youth Opportunities in Tech Innovations</p>
+                                <li style="color: white;"><a style="color: white;" href="https://www.instagram.com/texasyoti/" target="_blank">Visit Instagram for YOTI</a></li>
+<li style="color: white;"><a style="color: white;" href="https://www.linkedin.com/company/youth-opportunities-in-tech-innovation/about/" target="_blank">Visit LinkedIn for YOTI</a></li>
+
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
